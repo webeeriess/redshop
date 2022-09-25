@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ACCOUNT</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+			<div class="navbar">
+		<div class="logo">
+			<a href="redshop.html"><img src="https://source.unsplash.com/gTV2osuOsJc" width="135px"></a>
+		</div>
+		<nav>
+			<ul id="menuitems">
+				<li><a href="redshop.html">HOME</li>
+				<li><a href="product.html">PRODUCTS</li>
+				<li><a href="">ABOUT</li>
+				<li><a href="">CONTACT</li>
+				<li><a href="account.html">ACCOUNT</li>
+			</ul>
+		</nav>
+		<img src="https://source.unsplash.com/Gv6b0bPhAg0" width="30px" height="30px">
+		<img src="https://source.unsplash.com/MRjjcDIk3Gw" class="menu-icon" onclick="menutoggle()" width="30px" height="30px">
+	</div>
+	</div>
+
+<!------- account-page----->
+<div class="account-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<img src="https://source.unsplash.com/PM4Vu1B0gxk" width="500%" height="500px">
+			</div>
+			<div class="col-2">
+				<div class="form-container">
+					<div class="form-btn">
+						<span onclick="login()">login</span>
+						<span onclick="register()">/Register</span>
+						<hr id="indicator">
+						<br>
+					</div>
+
+					<form id="loginform">
+						<input type="text" placeholder="username">
+						<input type="password" placeholder="password">
+						<button type="submit" class="btn">Login</button>
+						
+					</form>
+					<form id="regform">
+						<input type="text" placeholder="username">
+						<input type="e-mail" placeholder="e-mail">
+						<input type="password" placeholder="password">
+						<button type="submit" class="btn">Register</button>
+					</form>					
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+		
+		
+
+<!------- footer ----->
+	 <div class="footer">
+	 	<div class="container">
+	 		<div class="row">
+	 			<div class="footer-col-1">
+	 				<h3>download our app</h3>
+	 				<p>download app for android and ios mobile phone.</p>
+	 			</div>
+	 				<div class="footer-col-2">
+
+					<p>Unicode:</p>		
+					<i style='font-size:24px' class='fab'>&#xf3ab;</i>
+	 				<p>A leather shoe shaped like a moccasin, with a slight heel. You can slide your foot into it and they don’t need fastening as they don’t have laces..</p>
+	 			</div>
+	 			<div class="footer-col-3">
+	 				<h3>USEFUL LINKS</h3>
+	 				<ul>
+	 					<li>coupons</li>
+	 					<li>blog post</li>
+	 					<li>Return policy</li>
+	 					<li>join affiliate</li>
+	 				</ul>
+	 			</div>
+	 			<div class="footer-col-4">
+	 				<h3>follow us</h3>
+	 				<ul>
+	 					<li>FACEBOOK</li>
+	 					<li>TWITTER</li>
+	 					<li>INSTAGRAM</li>
+	 					<li>YOUTUBE</li>
+	 				</ul>
+	 			</div>
+	 	</div>
+	 	<hr>
+	 	<p class="copyright">copy right-2022</p>
+	 </div>
+	 </div>
+
+
+<!---------js for toggle menu-------->
+
+
+<script type="text/javascript">
+	var menuitems = document.getElementByid("menuitems");
+
+	menuitems.style.maxheight = "0px";
+
+	function menutoggle(){
+		if(menuitems.style.maxheight == "0px")
+		{
+			menuitems.style.maxheight = "200px";
+		}
+		else
+		{
+			menuitems.style.maxheight = "0px";
+		}
+
+	}
+</script>
+
+
+<!---------js for toggle form-------->
+
+	<script>
+		
+		var loginform = document.getElementByid("loginform");
+		var regform = document.getElementByid("regform");
+		var indicator = document.getElementByid("indicator");
+
+			function register(){
+
+				regform.style.transform = "translateX(0px)";
+				loginform.style.transform = "translateX(0px)";
+			}
+
+			function login(){
+
+				regform.style.transform = "translateX(300px)";
+				loginform.style.transform = "translateX(300px)";
+			}
+
+	</script>
+
+</body>
+</html>
